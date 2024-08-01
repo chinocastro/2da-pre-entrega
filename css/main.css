@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    background-color: #0E0D0D ;
+}
+
+/* estilos de mobile  */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/*main*/
+
+main{
+    padding: 20px;
+}
+
+main h1{
+    text-align: center;
+    color: whitesmoke;
+}
+
+main .div-main-uno{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .div-main-uno img{
+    width: 50%;
+}
+
+main .div-main-uno p{
+    color: whitesmoke;
+    text-align: center;
+}
+
+main .div-main-dos{
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+main .div-main-dos div{
+    display: flex;
+    justify-content: center;
+}   
+
+main .div-main-dos div img{
+    width: 50%;
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* mq */
+
+@media screen and (min-width: 768px){
+    header{
+        justify-content: space-around;
+    }
+
+    main .div-main-uno{
+        flex-direction: row;
+    }
+
+    main .div-main-dos{
+        margin-top: 20px;
+    }
+
+    main .div-main-dos div img{
+        width: 65%;
+    }
+}
